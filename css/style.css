@@ -1,0 +1,330 @@
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+body{
+	margin:1%;
+	padding:1%;
+	font-size:150%;
+	overflow-x:hidden;
+	/* background: black; */
+	background-color: #9a90cf;
+	/* color: white; */
+	color: black;
+
+}
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 2em; 
+	font-weight: bold;
+	font-family: "Playfair Display", "Didot", "Times New Roman", Times, serif;
+}
+
+
+.active{
+	background-color: #e5d5ff;
+    text-transform: uppercase;
+	text-align: center;
+	/* border: dashed #3c1d6e; */
+}
+
+.active a{
+	text-decoration: none;
+	color: #3c1d6e !important;
+}
+
+/*Style the images*/
+img{
+    width: 100%;
+	border: 3px solid rgb(255, 255, 255);
+	padding: 1px;
+	border-radius: 5px;
+	margin-top: 2%;
+    /* margin-left: 40%; */
+    /* align-items: center; */
+}
+
+/* img:nth-child(odd):hover{
+	opacity: 0.5;
+} */
+
+img:nth-child(even){
+	border-color: rgb(140, 165, 236);
+	border: dashed rgb(140, 165, 236);
+	padding: 0.1%;
+}
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 2em; 
+	font-weight: bold;
+}
+
+/*Improve the spacing for paragraphs AND headings*/
+p, h1, h2 {
+    padding: 10px;
+}
+p{
+	font-family: "Trebuchet MS";
+	font-size: 30px; 
+	line-height: 50px;
+}
+/*Add borders around the main components and some
+space too*/
+header, nav, main, h1, footer{
+	/* border: 2px solid grey; */
+	margin: 10px 0;
+}
+
+
+/*Change the styling for all of the list 
+items in the nav section*/
+nav{
+	display: flexbox;
+}
+nav li{
+	/* background-color: #caaef8; */
+	background-color: #3c1d6e;
+	color: white;
+	padding:10px;
+	min-width:20.5%;
+	/* border:1px solid black; */
+	display: inline-block;
+	text-align: center;
+	flex-wrap: wrap;
+	font-size: 20px;
+	height: 5%;
+}
+
+nav ul li a{
+	color: #e5d5ff !important;
+	text-decoration: none;
+}
+
+/* landing page text */
+/* #landingText{
+	margin-top: 8%;
+}
+#landingText p {
+	float: left;
+	width: 37%;
+	font-size: 19px;
+} */
+
+
+/* image formatting */
+
+/* index.html */
+#indexcolor{
+	background-color: #f9f5f4;
+}
+#title{
+	text-align: center;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 30px;
+	column-gap: 15px;
+}
+#landing{
+	width: 100%;
+	height: auto; 
+	grid-column: 1/3;
+	grid-row: 1/2;
+}
+/* set columns */
+.landingText {
+	font-size: 18px;
+	/* grid-column: 2/3; */
+	line-height: 33px;
+	display: flex;
+	text-align: center;
+}
+#landingimage2, #landingimage3, #landingimage4{
+	grid-column: 1/2;
+}
+
+#para1, #para2, #para3{
+	margin-top: 20px;
+	grid-column: 2/3;
+	box-shadow: inset 0 -25px 50px -35px rgba(0, 0, 0, 1);
+}
+
+.text{
+	align-self: center;
+    justify-content: center;
+    max-height: 25vh;
+    overflow: scroll;
+}
+/* set rows */
+
+#para1,#landingimage2{
+	grid-row: 2/3;
+}
+#para2,#landingimage3{
+	grid-row: 3/4;
+}
+#para3, #landingimage4{
+	grid-row: 4/5;
+}
+
+/* vocal line */
+#vocalcolor{
+	background-color: #a9c1b2;
+}
+#vocalcover{
+  background-image: url("../images/vocallinedynamite.jpeg");
+  background-color:  #a9c1b2;
+
+  /* Set a specific height */
+  min-height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:  contain;
+}
+#vocalintro{
+	text-align: center;
+	line-height: 38px;
+	font-size: 19px;
+	margin-bottom: 30px;
+	padding-top: 10%;
+	background-color:  #a9c1b2;
+}
+
+#vocal{
+	width: 30%;
+	height: auto;
+	margin-left: 20%;
+}
+#young {
+	width: 23%;
+	height: auto;
+}
+#runimg{
+	width: 53%;
+	height: auto;
+	margin-left: 20%;
+}
+#vocaltext{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 15px;
+	column-gap: 15px;
+}
+#vocaltext p{
+	/* margin-left: 20%;
+	margin-right: 27%; */
+	text-align: center;
+	line-height: 38px;
+	font-size: 19px;
+	grid-column: 1/3;
+
+}
+#jin, #jimin, #tae, #jk{
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+}
+.name{
+	grid-column: 1/4;
+	grid-row: 1/2;
+}
+#singers, #rappers{
+	margin-top: 7%;
+}
+#jin1 , #jm1, #v1, #jk1, #rm1, #sg1, #jh1{
+	height: auto;
+	grid-column: 1/4;
+	grid-row: 2/3;
+}
+#jin2, #jm2, #v2, #jk2, #rm2, #sg2, #jh2{
+	height: auto;
+	grid-column: 1/3;
+	grid-row: 3/4;
+}
+#rapimg{
+	width: 30%;
+	height: auto;
+	margin-left: 33%;
+}
+#young2{
+	margin-left: 8%;
+	width: 40%;
+	height: auto;
+}
+#runrap{
+	margin-left: 2%;
+	width: 31.5%;
+	height: auto;
+}
+#blackswan, #home, #ftmr, #pp, #bfly{
+	width: 70%;
+	height: auto;
+}
+#jin, #tae, #rm, #jh{
+	margin-top: 1%;
+	float: left;
+}
+.jintext{
+	float: right;
+	margin-left: 53%;
+	margin-top: -35%;
+	font-size: 19px;
+	border: 3px solid rgb(255, 255, 255);
+}
+.jmtext{
+	float: left;
+	margin-right: 4%;
+	margin-top: -1%;
+	font-size: 19px;
+	width: 45%;
+	border: 3px solid rgb(255, 255, 255);
+}
+
+#jimin, #jk, #suga{
+	margin-top: 5%;
+	float: right;
+}
+.name{
+	margin-bottom: 40px;
+	text-align: center;
+}
+#nameJH{
+	margin-bottom: 108px;
+	text-align: center;
+}
+#songslist{
+	align-items: center;
+	margin-left: 30%;
+	margin-top: 1%;
+}
+#songslist p{
+	text-align: center;
+	margin-right: 30%;
+}
+footer p{
+	font-family: "Trebuchet MS";
+	font-size: 13px !important; 
+	margin-top: 30% !important;
+}
+
+/*Added this so the links stay the same color*/
+a:visited{color:#40097e}
+
+/* Contact Page */
+.contactpageheading{
+	text-align: center;
+	padding: 5%;
+}
+
+.contacttext{
+	color: #f9f5f4;
+	padding: 2%;
+}
+
+#smallertext{
+	font-size: 18px;
+}

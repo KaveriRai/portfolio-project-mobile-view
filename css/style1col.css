@@ -1,0 +1,10 @@
+
+#songslist {
+    border: 3px solid blue;
+    display: grid;
+    grid-template-columns: 1350px;
+    margin-left: 0%;
+}
+#songslist img{
+    width: 100%;
+}
