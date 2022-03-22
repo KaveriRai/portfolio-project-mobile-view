@@ -61,7 +61,7 @@ img{
 	border: 0.5px solid rgb(255, 255, 255);
 	padding: 1px;
 	border-radius: 0.5px;
-	margin-top: 2%;
+	/* margin-top: 2%; */
     /* margin-left: 40%; */
     /* align-items: center; */
 }
@@ -135,8 +135,8 @@ nav ul li a{
 
 .container{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	row-gap: 30px;
+	grid-template-columns: 4fr 2fr;
+	row-gap: 170px;
 	column-gap: 15px;
 }
 /* section{
@@ -145,7 +145,16 @@ nav ul li a{
 section img{
 	position: absolute;
 } */
-#landing2{
+section{
+	position: relative;
+}
+#landing img{
+	position: absolute;
+}
+#landing2 img{
+	position: absolute;
+}
+#landing2 img{
 	animation-name: fade;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
@@ -176,9 +185,10 @@ section img{
 } */
 /* set columns */
 .landingText {
-	font-size: 18px;
+	/* font-size: 18px; */
+	font-size: 10px;
 	/* grid-column: 2/3; */
-	line-height: 33px;
+	line-height: 25px;
 	display: flex;
 	text-align: center;
 }
@@ -194,7 +204,7 @@ section img{
 .text{
 	align-self: center;
     justify-content: center;
-    max-height: 25vh;
+    max-height: 41vh;
     overflow: scroll;
 }
 /* set rows */
@@ -346,32 +356,108 @@ section img{
 .jintext{
 	line-height: 30px;
 	font-size: 12px;
-	border: 3px solid rgb(255, 255, 255);
+	/* border: 3px solid rgb(255, 255, 255); */
 	grid-column: 2/4;
 	grid-row: 3/4;
+	padding: 3px;
+	/* margin-top: -160px;
+	background-color: white;
+	opacity: 86%; */
 }
 .jintext2{
 	line-height: 30px;
 	font-size: 12px;
-	border: 3px solid rgb(255, 255, 255);
+	/* border: 3px solid rgb(255, 255, 255); */
 	grid-column: 2/4;
 	grid-row: 5/6;
+	padding: 3px;
 }
 .jmtext{
 	line-height: 30px;
 	font-size: 12px;
-	border: 3px solid rgb(255, 255, 255);
+	/* border: 3px solid rgb(255, 255, 255); */
 	grid-column: 1/3;
 	grid-row: 3/4;
+	padding: 3px;
 }
 .jmtext2{
 	line-height: 30px;
 	font-size: 12px;
-	border: 3px solid rgb(255, 255, 255);
+	/* border: 3px solid rgb(255, 255, 255); */
 	grid-column: 1/3;
 	grid-row: 5/6;
+	padding: 3px;
 }
-
+#jinformat{
+	margin-top: -80px;
+    background: #d0d0d0;
+    opacity: 91%;
+}
+#jinformat2{
+	margin-top: -40px;
+    background: #afafcf;
+    opacity: 91%;
+}
+#jmformat{
+	margin-top: -80px;
+    background: #c9a399;
+    opacity: 91%;
+}
+#jmformat2{
+	margin-top: -40px;
+    background: #f9efcc;
+    opacity: 91%;
+}
+#vformat{
+	margin-top: -80px;
+    background: #d1c4ab;
+    opacity: 91%;
+}
+#vformat2{
+	margin-top: -40px;
+    background: #e5c0b8;
+    opacity: 91%;
+}
+#jkformat{
+	margin-top: -80px;
+    background: #6591b5;
+    opacity: 91%;
+}
+#jkformat2{
+	margin-top: -40px;
+    background: #aaadb6;
+    opacity: 91%;
+}
+#rmformat{
+	margin-top: -130px;
+    background: #7e5050;
+    opacity: 91%
+}
+#rmformat2{
+	margin-top: -40px;
+    background: #787d6c;
+    opacity: 91%;
+}
+#sugaformat{
+	margin-top: -80px;
+    background: #4e6082;
+    opacity: 91%;
+}
+#sugaformat2{
+	margin-top: -60px;
+    background: #ca8f8c;
+    opacity: 91%;
+}
+#jhopeformat{
+	margin-top: -80px;
+    background: #3b9f88;
+    opacity: 91%
+}
+#jhopeformat2{
+	margin-top: -45px;
+    background: #f45d96;
+    opacity: 91%;
+}
 #jimin, #jk, #suga{
 	margin-top: 5%;
 	float: right;
