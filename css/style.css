@@ -13,7 +13,7 @@ body{
   position: relative;
 	/* color: white; */
 	color: black;
-	font-family: 'Carme', sans-serif;
+	font-family: 'Carme', sans-serif, Helvetica, sans-serif;
 
 }
 
@@ -46,6 +46,7 @@ a.skip{
 	/* Requirement 3 code here*/
 	position:absolute; 
 	left: -500px; 
+	font-size: 10px;
 	/* CHECK */
   }
   a.skip:focus{
@@ -87,7 +88,7 @@ p, h1, h2 {
     padding: 10px;
 }
 p{
-	font-family: 'Carme', sans-serif;
+	font-family: 'Carme', sans-serif, Helvetica, sans-serif;
 	font-size: 30px; 
 	line-height: 50px;
 }
@@ -127,10 +128,11 @@ nav ul li a{
 
 /* index.html */
 #indexcolor{
-	background-color: #f9f5f4;
+	background-color:rgb(39 40 49);
 }
 #title{
 	text-align: center;
+	color: white;
 }
 .landingpagebg{
 	background-image: url("../images/bts_blkwhite.jpeg");
@@ -151,7 +153,8 @@ nav ul li a{
 .container{
 	display: grid;
 	grid-template-columns: 2fr 2fr;
-	row-gap: 170px;
+	/* row-gap: 170px; */
+	row-gap: 315px;
 	column-gap: 05px;
 }
 /* section{
@@ -208,24 +211,27 @@ section{
 	text-align: center;
 }
 #landingimage2, #landingimage3, #landingimage4{
-	grid-column: 1/2;
+	grid-column: 1/3;
 }
 
 #para1, #para2, #para3{
-	grid-column: 2/3;
+	grid-column: 1/3;
 	/* box-shadow: inset 0 -25px 50px -35px rgba(0, 0, 0, 1); */
 }
 #para1{
 	background: #d1a979;
     padding: 1px;
+	margin-bottom: -534px
 }
 #para2{
 	background: #f6dbd1;
     padding: 1px;
+	margin-bottom: -860px
 }
 #para3{
 	background: #a4c0e7;
     padding: 1px;
+	margin-bottom: -700px
 }
 .text{
 	align-self: center;
@@ -255,9 +261,11 @@ section{
     border: 1px dotted black;
     padding: 3px;
 	color: #40097e;
-	font-family: 'Carme', sans-serif;
+	font-family: 'Carme', sans-serif, Helvetica, sans-serif;
 }
-
+#indexftr{
+	color: #fff;
+}
 /* vocal line */
 #vocalcolor{
 	background-color: #a9c1b2;
@@ -270,9 +278,12 @@ section{
   min-height: 540px;
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
+  background-size:  contain; */
+
+  /* without parallax */
   background-size:  contain;
 }
 #vocalintro{
@@ -354,7 +365,7 @@ section{
 	min-height: 540px;
   
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 	background-position: center;
 	background-repeat: repeat;
 	background-size:  contain;
@@ -364,7 +375,7 @@ section{
 	line-height: 38px;
 	font-size: 19px;
 	margin-bottom: 30px;
-	padding-top: 2%;
+	/* padding-top: 2%; */
 	padding-right: 2%;
 	padding-left: 2%;
 	background-color:  black;
@@ -372,6 +383,9 @@ section{
 #raptext{
 	display: flex;
 	flex-wrap: wrap;
+}
+.fleximgs{
+	width: 50%;
 }
 #raptext p{
 	/* margin-left: 20%;
@@ -525,12 +539,15 @@ section{
 
 /* Songs list  */
 #songscolor{
-	background-color: #b9c6e9;
-	color: #462f2f;
+	/* background-color: #b9c6e9; */
+	background-color: #262330;
+	/* color: #462f2f; */
+	color: #c59090;
 }
 #listtext p{
 	font-size: 19px;
 	line-height: 30px;
+	text-align: center;
 }
 #songslist{
 	/* align-items: center;
@@ -540,6 +557,8 @@ section{
 	grid-template-columns: repeat(6, 1fr);
 	column-gap: 10px;
 	row-gap: 60px;
+	color: #cac0d9;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #blackswan{
 	grid-column: 1/7;
@@ -590,7 +609,7 @@ section{
 footer p{
 	font-family: "Trebuchet MS";
 	font-size: 13px !important; 
-	margin-top: 30% !important;
+	margin-top: 37% !important;
 }
 
 /*Added this so the links stay the same color*/
@@ -603,7 +622,7 @@ a:visited{color:#40097e}
 }
 
 .contacttext{
-	color: #f9f5f4;
+	color: #2e2c2c;
 	padding: 2%;
 }
 
